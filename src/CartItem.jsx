@@ -1,4 +1,15 @@
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
+import { useGlobalContext } from "./context";
+
+import {
+  CLEAR_CART,
+  REMOVE,
+  INCREASE,
+  DECREASE,
+  DISPLAY_ITEMS,
+  IS_LOADING,
+} from "./actions";
+
 const CartItem = ({ id, img, title, price, amount }) => {
   return (
     <article className="cart-item">
